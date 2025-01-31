@@ -11,11 +11,13 @@ function CheckScore (score){
     else if (score >= 20){
        console.log("You know some things, but it's a pretty bad score. Needs improvement.")
     }
+    else if (score < 0 || score > 100){
+        console.log("This is not possible, an error has occurred.")
+    }
     else if (score >= 0){
         console.log("That's was a terrible score - total fail!")
     }
-    else
-   console.log("INVALID SCORE")
 }
 
-CheckScore(21)
+
+CheckScore(-1)
